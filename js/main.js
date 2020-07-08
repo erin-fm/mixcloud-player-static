@@ -1,6 +1,6 @@
 // on document load
 var defaultAccount = "https://api.mixcloud.com/Stewart_Avenue/"
-var defaulturl = "https://api.mixcloud.com/Stewart_Avenue/cloudcasts/?limit=20&offset=0"
+var defaulturl = "https://api.mixcloud.com/Stewart_Avenue/cloudcasts/?limit=100&offset=0"
 
 var minCount = 0;
 var mixCount = 0;
@@ -91,7 +91,7 @@ function fetchmixcloud(urldata) {
 
       //console.log(mixCount)
       $(document).find('#mixnumber').text(mixCount);
-      $(document).find('#minnumber').text(minCount - 20);
+      $(document).find('#minnumber').text(minCount - 100);
 
       convertduration()
       removeDuplicates()
