@@ -56,25 +56,30 @@ body {
 #tags {
     display: flex;
     align-items: center;
-    height: 60px;
-    border-bottom: 1px solid #ccc;
-    overflow: scroll;
-    position: sticky;
     top: 61px;
     background: white;
+    font-size: 11px;
+    line-height: 38px;
+    border-bottom: 1px solid #ccc;
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 #tag-collection {
-    display: flex;
+    display: inline-block;
     align-items: center;
+    border: 1px;
 }
 
 #tags>a {
-    position: sticky;
+    display: inline-block;
     left: 0;
+    width: 100%;
     background: white;
-    padding: 20px;
-    border-right: 1px solid #ccc;
+    padding: 10px;
+    border-right: 1px dotted #ccc;
+    text-transform: uppercase;
+
 }
 
 #pagination-container {
@@ -154,14 +159,21 @@ img {
     position: fixed;
     top: 50%;
     left: 50%;
+    width: 150px;
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: opacity 300ms ease;
-    z-index: -1;
+    z-index: 1;
+
 }
 
 .hoverimg {
     opacity: 1;
+    box-shadow: 0 0 1px rgba(0, 0, 255, 1);
+    -webkit-box-shadow: 0 0 100px rgba(0, 0, 255, 1); 
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 255, 1);
+    border:0px solid rgba(0,0,255, 0.8);
+}
 }
 
 #header span {
